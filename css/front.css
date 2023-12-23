@@ -1,0 +1,34 @@
+.PostImage{
+    width: 100px;
+}
+
+.PostUploader{
+    padding-bottom: -10px;
+}
+
+.uploaderImage{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.uploaderName{
+    /*font-size: 30px;*/
+}
+
+.PostLocation{
+
+}
+
+.description{
+
+}
+
+.PostCaption{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.locationSvg{
+    width: 20px;
+}

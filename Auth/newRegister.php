@@ -9,10 +9,9 @@ if($availability > 0){
     echo '<script>alert("User already with that email!")</script>';
     header('Location: ./register.php');
 }
+    header("Location: ./createAcc.php");
 
 if($conn -> query('INSERT INTO userInfo( email, pass) values ( "'.$_POST['email'].'", "'.$_POST['pass'].'")')){
     $_SESSION['id'] = (mysqli_fetch_assoc(mysqli_query($conn,'SELECT id FROM userInfo where email="'.$_POST['email'].'"')))['id'];
-    header("Location: ./createAcc.php");
-
 }
 

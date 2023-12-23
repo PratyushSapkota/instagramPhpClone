@@ -1,0 +1,25 @@
+.PostLocation{
+
+}
+
+.description{
+
+}
+
+.PostCaption{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.locationSvg{
+    width: 20px;
+}
+
+.PostImage{
+    width: 100px;
+}
+
+.eachPost{
+    width: 200px;
+    border: 2px solid black;
+}

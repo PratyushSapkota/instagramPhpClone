@@ -30,7 +30,7 @@ if (!$_SESSION['logged']) {
 
 </script>
 
-<form action="addPost.php" method="post" enctype="multipart/form-data">
+<form action="./addPost.php" method="post" enctype="multipart/form-data">
     <input type="text" placeholder="Enter a caption" name="caption">
     <input type="text" placeholder="Enter post description" name="description">
     <select name="type">
@@ -46,3 +46,4 @@ if (!$_SESSION['logged']) {
 </form>
 
 <button onclick="getLocation()">Get location</button>
+<a href="../index.php"><button>Go back</button></a>

@@ -1,0 +1,22 @@
+.pfpImage{
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.postImage{
+    width: 100px;
+}
+
+.eachPost{
+    width: 300px;
+    border: 1px solid black;
+}
+
+.bio{
+
+}
+
+.userName{
+    font-weight: bold;
+}
