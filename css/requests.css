@@ -1,0 +1,25 @@
+.image{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 60px;
+}
+
+
+.each{
+    /*border: 1px solid black;*/
+}
+
+body{
+    font-size: 20px;
+}
+
+.buttons{
+    /*border: 1px solid black;*/
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.selection{
+    width: 100px;
+    height: 30px;
+}

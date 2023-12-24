@@ -4,13 +4,22 @@
     border-radius: 50%;
 }
 
-.postImage{
-    width: 100px;
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
 }
 
 .eachPost{
-    width: 300px;
+    width: 33.33%;
+    margin: 10px;
+    box-sizing: border-box;
     border: 1px solid black;
+}
+
+.postImage{
+    width: 100px;
 }
 
 .bio{

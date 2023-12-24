@@ -8,5 +8,5 @@ $following = $_GET['id'];
 $requestQuery = "insert into pending(follower, followed) values ('$follower', '$following') ";
 
 if($conn -> query($requestQuery)){
-    header('Location: ./FindPeople.php');
+    header('Location: ../index.php');
 }
