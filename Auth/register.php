@@ -9,20 +9,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/register.css">
     <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-<div id="container">
-    <div id="heading">
-        <h1>Register Page</h1>
+
+<div class="wrapper">
+    <form action =""./checkLogin.php" method="post"">
+    <h1>Register</h1>
+    <div class ="input-box">
+        <input id="email" type="email" placeholder="Email" name="email"><br>
+        <i class='bx bxs-user'></i>
     </div>
-    <form action="./newRegister.php" method="post">
-        <input id="email" type="email" placeholder="email" name="email"><br>
-        <input id="password" type="password" placeholder="password" name="pass"><br>
-        <input id="registerButton" type="submit" value="register">
-    </form>
-    <p> Or</p>
-    <a href="./login.php" id="loginButton">login</a>
+    <div class = "input-box">
+        <input id="password" type="password" placeholder="Password" name="pass"><br>
+        <i class='bx bxs-lock-alt' ></i>
+    </div>
+    <input value= "Register" type ="submit" class ="btn">
+    <div class = " registerlink">
+        <p>Already have an account?<a href="./login.php" id="loginButton">Login</a></p>
+    </div>
 </div>
+    </form>
 </body>
+
+
+
 </html>

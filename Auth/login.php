@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/login.css">
     <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <?php
@@ -15,17 +16,31 @@ $_SESSION['logged'] = false;
 $_SESSION['id'] = null;
 ?>
 
-<div id="container">
-    <div id="heading">
-        <h1>Login Page</h1>
+
+<div class="wrapper">
+    <form action =""./checkLogin.php" method="post"">
+        <h1>Login</h1>
+    <div class ="input-box">
+        <input id="email" type="email" placeholder="Email" name="email"><br>
+        <i class='bx bxs-user'></i>
     </div>
-    <form action="./checkLogin.php" method="post">
-        <input id="email" type="email" placeholder="email" name="email"><br>
-        <input id="password" type="password" placeholder="password" name="pass"><br>
-        <input id="loginButton" type="submit" value="login">
+    <div class = "input-box">
+        <input id="password" type="password" placeholder="Password" name="pass"><br>
+        <i class='bx bxs-lock-alt' ></i>
+    </div>
+    <input value="Login" type = "submit" class = "btn">
+    <div class = " registerlink">
+        <p> Don't have an account?<a href="./register.php" id="registerButton">Register</a></p>
+    </div>
+
     </form>
-    <p> Or</p>
-    <a href="./register.php" id="registerButton">Register</a>
+
+
+
+
+
+
+
 </div>
 
 
