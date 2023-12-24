@@ -15,13 +15,20 @@ $_SESSION['logged'] = false;
 $_SESSION['id'] = null;
 ?>
 
-<h1>Login Page</h1>
+<div id="container">
+    <div id="heading">
+        <h1>Login Page</h1>
+    </div>
+    <form action="./checkLogin.php" method="post">
+        <input id="email" type="email" placeholder="email" name="email"><br>
+        <input id="password" type="password" placeholder="password" name="pass"><br>
+        <input id="loginButton" type="submit" value="login">
+    </form>
+    <p> Or</p>
+    <a href="./register.php" id="registerButton">Register</a>
+</div>
 
-<form action="./checkLogin.php" method="post">
-    <input id="email" type="email" placeholder="email" name="email">
-    <input id="password" type="password" placeholder="password" name="pass">
-    <input id="loginButton" type="submit" value="login">
-</form>
-<a href="./register.php" id="registerButton">Register</a>
+
+
 </body>
 </html>
