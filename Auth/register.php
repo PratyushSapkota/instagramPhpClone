@@ -11,11 +11,18 @@
     <title>Register</title>
 </head>
 <body>
-<form action="./newRegister.php" method="post">
-    <input id="email" type="email" placeholder="email" name="email">
-    <input id="password" type="password" placeholder="password" name="pass">
-    <input id="registerButton" type="submit" value="Register">
-</form>
-<a href="./login.php" id="loginButton">login</a>
+
+<div id="container">
+    <div id="heading">
+        <h1>Register Page</h1>
+    </div>
+    <form action="./newRegister.php" method="post">
+        <input id="email" type="email" placeholder="email" name="email"><br>
+        <input id="password" type="password" placeholder="password" name="pass"><br>
+        <input id="registerButton" type="submit" value="register">
+    </form>
+    <p> Or</p>
+    <a href="./login.php" id="loginButton">login</a>
+</div>
 </body>
 </html>
