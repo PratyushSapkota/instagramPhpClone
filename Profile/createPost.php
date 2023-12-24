@@ -1,3 +1,74 @@
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px; /* Adjust the maximum width as needed */
+        }
+
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #getLocationButton{
+            width: 300px;
+        }
+
+        #homeButton{
+            left = 50px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 400px; /* Adjust the maximum width as needed */
+        }
+    </style>
+</head>
+
+
+
 <?php
 session_start();
 if (!$_SESSION['logged']) {
@@ -45,5 +116,6 @@ if (!$_SESSION['logged']) {
     <input type="submit" value="POST">
 </form>
 
-<button onclick="getLocation()">Get location</button>
-<a href="../index.php"><button>Go back</button></a>
+<button id="getLocationButton" onclick="getLocation()">Get location</button>
+<br>
+<a href="../index.php"><button id="homeButton">Home</button></a>

@@ -1,5 +1,54 @@
+
+#leftNav{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border: 1px solid black;
+}
+
+#feed{
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 100%;
+}
+
+.postInfo{
+    border: 1px solid black;
+    width: 200px;
+}
+#posts{
+    padding-left: 25%;
+}
+.eachPost{
+    padding-bottom: 30px;
+    width: 400px;
+    border-bottom: 1px solid black;
+}
+
+#rightNav{
+    border: 1px solid black;
+    height: 100%;
+    padding-left: 10px;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.PostImageContainer{
+    text-align: center;
+}
 .PostImage{
-    width: 100px;
+    border: 1px solid black;
+    width: 400px;
 }
 
 .PostUploader{
@@ -32,3 +81,4 @@
 .locationSvg{
     width: 20px;
 }
+

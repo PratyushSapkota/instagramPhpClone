@@ -39,19 +39,20 @@ $followingCount = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM FRIENDS WHE
 <br><br>
 <h2>My Posts</h2>
 
+<div id="posts">
 <?php
 $myPostsQuery = "SELECT * FROM posts WHERE uploader=".$_SESSION['id'];
 $myPostsResult = mysqli_query($conn, $myPostsQuery);
 while($myPosts = mysqli_fetch_assoc($myPostsResult)){
     $type = $myPosts['post_type'] == 1 ? "Only Followers" : "Public";
-    
     echo "<div class='eachPost'>";
     echo $myPosts['caption'] ."<br>";
     echo $myPosts['description'] ."<br>";
     echo "<img class='postImage' src='data: ".$myPosts['imageDir'].";base64,".base64_encode($myPosts['image'])." '> <br> ";
-    echo "</div>";
     echo $type ."<br>";
     echo "<a href='changeVisibility.php?id=".$myPosts['postId']."&curr=". $myPosts['post_type']."'><button>Change to ".($myPosts['post_type'] == 1 ? 'Public' : 'Only Followers') ."</button></a>";
     echo "<a href='removePost.php?id=".$myPosts['postId']."'><button>Remove</button></a>";
-
+    echo "</div>";
 }
+?>
+</div>
